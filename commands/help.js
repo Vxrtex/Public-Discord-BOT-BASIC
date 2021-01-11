@@ -6,13 +6,15 @@ module.exports = {
     execute(message, args) {
         const Embed = new Discord.MessageEmbed()
             .setColor('#0aa1f5')
-            .setTitle(`ICE BOT Help Sheet `)
-            .setDescription('If you need support with the ICE BOT then please do the following. Either join the discord below or go to the website below.')
-            .setFooter('ICE BOT')
-            .setThumbnail('https://media.discordapp.net/attachments/798086773455847477/798089006767669258/ICE_BOT.png?width=693&height=701')
+            .setTitle(`TITLE `)
+            .setDescription('DESCRIPTION')
+            .setFooter('FOOTER')
+            .setThumbnail('THUMBNAIL;')
             .addFields({ name: 'Store', value: 'icestore.online/store' }, { name: 'Website', value: 'icestore.online' }, { name: 'Support Discord', value: 'https://discord.gg/cBytv2m4C3' }, )
-            .setFooter('ICE BOT', 'https://media.discordapp.net/attachments/798086773455847477/798089006767669258/ICE_BOT.png?width=693&height=701');
+            .setFooter('FOOTER', 'FOOTER PHOTO');
 
         message.author.send(Embed);
     }
 }
+
+//This will send a DM from the bot
